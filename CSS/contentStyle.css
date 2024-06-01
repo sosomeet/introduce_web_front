@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+header .inner {
+  width: 1180px;
+  height: 120px;
+  margin: 0px auto;
+  position: relative;
+}
+
+header .inner h1 {
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+}
+
+header .inner h1 a {
+  font: bold 24px/1 "arial";
+  color: #444;
+}
+
+header .inner .util {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+header .inner .util li {
+  float: left;
+}
+
+header .inner .util li a {
+  display: block;
+  font: 12px/1 "arial";
+  color: #999;
+  padding: 0px 10px;
+}
+
+header .inner #gnb {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+header .inner #gnb li {
+  float: left;
+}
+
+header .inner #gnb li a {
+  display: block;
+  font: bold 15px/1 "arial";
+  color: #555;
+  padding: 20px 40px;
+  transition: all 0.5s;
+}
+
+header .inner #gnb li a:hover {
+  background: #555;
+  color: #fff;
+}
+
+figure {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url("../IMG/title_image\ \(1\).png");
+  opacity: 0.95;
+  position: relative;
+  overflow: hidden;
+  padding-top: 180px;
+}
+
+.nav_2 {
+  background-image: url("../IMG/title_image\ \(2\).png");
+}
+
+.nav_3 {
+  background-image: url("../IMG/title_image\ \(3\).png");
+}
+
+.nav_4 {
+  background-image: url("../IMG/title_image\ \(4\).png");
+}
+
+.nav_5 {
+  background-image: url("../IMG/title_image\ \(5\).png");
+}
+
+figure .inner {
+  width: 1180px;
+  margin: 0px auto;
+  position: relative;
+}
+
+figure .inner h1 {
+  font: normal 100px/1 "arial";
+  color: #000;
+  background-color: #fff;
+  filter: brightness(1);
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
+.nav_1 .inner h1 {
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.8);
+}
+
+.nav_1 .inner p {
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.9);
+}
+
+.nav_2 .inner h1 {
+  box-shadow: 10px 10px 30px rgba(154, 205, 50, 0.8);
+}
+
+.nav_2 .inner p {
+  box-shadow: 10px 10px 10px rgba(154, 205, 50, 0.9);
+}
+
+.nav_3 .inner h1 {
+  box-shadow: 10px 10px 10px rgba(232, 131, 255, 0.8),
+    10px 10px 30px rgba(93, 89, 255, 0.8);
+}
+
+.nav_3 .inner p {
+  box-shadow: 10px 10px 10px rgba(232, 131, 255, 0.8),
+    10px 10px 30px rgba(93, 89, 255, 0.8);
+}
+
+.nav_4 .inner h1 {
+  box-shadow: 10px 10px 30px rgba(197, 27, 212, 0.8);
+}
+
+.nav_4 .inner p {
+  box-shadow: 10px 10px 10px rgba(197, 27, 212, 0.8);
+}
+
+.nav_5 .inner h1 {
+  box-shadow: 10px 10px 30px rgba(107, 34, 48, 0.9);
+}
+
+.nav_5 .inner p {
+  box-shadow: 10px 10px 30px rgba(107, 34, 48, 0.9);
+}
+
+figure .inner .퐁 {
+  font: bold 100px/1 "arial";
+  color: royalblue;
+  display: inline;
+}
+
+figure .inner .당 {
+  font: bold 100px/1 "arial";
+  color: yellowgreen;
+  display: inline;
+}
+
+figure .inner .SingNest {
+  font: bold 100px/1 "arial";
+  background: linear-gradient(to right, #e88dff, #5d59ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+figure .inner .poporang {
+  font: bold 100px/1 "arial";
+  color: rgb(197, 27, 212);
+  display: inline;
+}
+
+figure .inner .kwtycoon {
+  font: bold 100px/1 "arial";
+  color: rgb(107, 34, 48);
+  display: inline;
+}
+
+figure .inner p {
+  font: 16px/1.4 "arial";
+  color: #000;
+  background-color: #fff;
+  filter: brightness(1);
+  margin-bottom: 60px;
+}
+
+figure .inner a {
+  display: block;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #bbb;
+  font: bold 11px/30px "arial";
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  text-shadow: 0px 0px 3px #000;
+}
+
+figure .inner a:hover {
+  background: #fff;
+  color: #555;
+  text-shadow: 0px 0px 0px #000;
+}
+
+section {
+  width: 100%;
+  padding: 200px 0px;
+}
+
+section .inner {
+  width: 1180px;
+  margin: 0px auto;
+}
+
+section .inner h1 {
+  font: bold 24px/1 "arial";
+  color: #555;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+section .inner .wrap {
+  width: 100%;
+}
+
+section .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section .inner .wrap article {
+  width: 350px;
+  margin-right: 20px;
+}
+
+section .inner .wrap article:last-child {
+  margin-right: 0px;
+}
+
+section .inner .wrap article h2 {
+  margin-bottom: 10px;
+  font: bold 32px/1 "arial";
+  color: #000;
+}
+
+section .inner .wrap article p {
+  font: normal 16px/1 "arial";
+  color: #777;
+  margin-top: 10px;
+  line-height: 20px;
+}
+section .inner .wrap article {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin: 40px;
+}
+
+section .inner .wrap #video_article {
+  margin: 0 auto;
+  text-align: center;
+}
+
+section .inner .wrap article .pic {
+  float: left;
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+}
+
+#pongdang section .inner .wrap article .pic {
+  float: left;
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+}
+
+#pongdang section .inner .wrap #video_article video {
+  width: 100%;
+}
+
+#pongdang section .inner .wrap article .vertical {
+  margin: 0px 50px;
+  margin-right: 70px;
+  width: 300px;
+}
+
+#poporang section .inner .wrap article .vertical {
+  margin: 0px 50px;
+  margin-right: 120px;
+  width: 250px;
+}
+
+#kwtycoon section .inner .wrap article .vertical {
+  margin: 0px 50px;
+  margin-right: 120px;
+  width: 250px;
+}
+
+#kwtycoon section .inner .wrap #video_article video {
+  width: 100%;
+}
+
+section .inner .wrap article .text {
+  overflow: hidden;
+}
+
+section .inner .wrap article h2,
+section .inner .wrap article p {
+  margin: 0 0 10px 0;
+}
+
+section .inner .wrap article img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 0px;
+  background: #333;
+  border-top: 1px solid #888;
+}
+
+footer .inner {
+  width: 1180px;
+  margin: 0px auto;
+}
+
+footer .inner .upper {
+  width: 100%;
+  border-bottom: 1px solid #555;
+  padding-bottom: 20px;
+}
+
+footer .inner .upper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .inner .upper h1 {
+  float: left;
+  font: bold 24px/1 "arial";
+  color: #999;
+}
+
+footer .inner .upper ul {
+  float: right;
+}
+
+footer .inner .upper ul li {
+  float: left;
+  margin-left: 20px;
+}
+
+footer .inner .upper ul li a {
+  font: bold 14px/1 "arial";
+  color: #888;
+}
+
+footer .inner .lower {
+  width: 100%;
+  padding-top: 20px;
+}
+
+footer .inner .lower address {
+  width: 100%;
+  font: 12px/1 "arial";
+  color: #888;
+  margin-bottom: 20px;
+}
+
+footer .inner .lower p {
+  width: 100%;
+  font: 12px/1 "arial";
+  color: #888;
+}
