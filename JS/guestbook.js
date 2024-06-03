@@ -28,12 +28,16 @@ function renderTodos(todos) {
     // todo를 하나하나 도는 코드
     todos.forEach(todo => {
         // div 생성 부분
+        const nameDiv = document.createElement('div')
         const todoDiv = document.createElement('div')
         // 생성된 div에 todo-item class 지정
+        nameDiv.classList.add('name-item');
         todoDiv.classList.add('todo-item');
         // 생성된 div의 할 일을 item으로 초기화
+        nameDiv.textContent = todo.name;
         todoDiv.textContent = todo.item;
         // todosContainer에 자식으로 추가
+        todosContainer.appendChild(nameDiv);
         todosContainer.appendChild(todoDiv);
 
 
@@ -71,7 +75,7 @@ todoInput.addEventListener('keypress', function (event) {
 // todo 추가
 function addTodo() {
     // trim() : 입력값에서 좌우 공백 제거
-    const name = todoInput.value.trim();
+    const name = nameInput.value.trim();
 
     // trim() : 입력값에서 좌우 공백 제거
     const title = todoInput.value.trim();
@@ -87,12 +91,15 @@ function addTodo() {
     // 만약 입력이 없다면 return
     if (title == '')
         return;
+    if (name == '')
+        return;
 
     // 정상데이터 입력 후 다시 렌더링
     axios.post(`${host}/todo`, todoData)
         .then(response => {
             // input 태그 내용을 초기화
             todoInput.value = '';
+            nameInput.value = '';
             // todo List 항목 갱신
             getTodos();
         })
