@@ -71,7 +71,7 @@ h1 {
 
 /* 입력 창 스타일 */
 .name-input {
-  width: calc(100% - 40px);
+  width: 100%;
   padding: 10px;
   font-size: 16px;
   margin-bottom: 20px;
@@ -82,7 +82,7 @@ h1 {
 }
 
 .todo-input {
-  width: calc(100% - 40px);
+  width: 100%;
   padding: 10px;
   font-size: 16px;
   margin-bottom: 20px;
