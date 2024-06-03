@@ -83,7 +83,7 @@ function addTodo() {
         id: 0,
         name: name,
         item: title,
-        time: 0
+        time: ''
     };
 
     // 만약 입력이 없다면 return
