@@ -1,152 +1,130 @@
 @charset "utf-8";
 
+/* 기본 스타일 초기화 */
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: Arial;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(230, 230, 230);
+  font-family: "Arial", sans-serif;
 }
 
+/* 전체 컨테이너 스타일 */
 .container {
-  width: 70vw;
-  margin: 20px auto;
-  padding: 0px 20px 20px 20px;
-  background: #fff;
-  box-shadow: 0 0 30px rgba(67, 79, 250, 0.5);
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 50px;
 }
 
-.container h1 {
-  text-align: center;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-.todo-input {
-  width: 100%;
-  font-size: 20px;
-  margin-bottom: 20px;
-  padding: 5px;
-}
-
-.todos-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.todo-item {
-  background-color: #f4f4f4;
-  padding: 50px;
-  margin-bottom: 10px;
-  font-size: 15px;
-  width: calc(33.33% - 7px);
-  position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  word-wrap: break-word;
-}
-
-.todo-item:hover {
-  background-color: #ddd;
-}
-
-.delete-btn {
-  display: none;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 50%;
-  font-size: 10px;
-  cursor: pointer;
-}
-
-.todo-item:hover .delete-btn {
-  display: block;
-}
-
+/* 헤더 스타일 */
 header {
-  width: 100%;
-  border-bottom: 1px solid #ddd;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
 }
 
 header .inner {
-  height: 120px;
-  margin: 0px auto;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header .inner h1 {
-  position: absolute;
-  left: 0px;
-  bottom: 15px;
+header h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 20px;
 }
 
-header .inner h1 a {
-  font: bold 24px/1 "arial";
-  color: #444;
+#gnb {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
 }
 
-header .inner .util {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+#gnb li {
+  margin-left: 20px;
 }
 
-header .inner .util li {
-  float: left;
+#gnb li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-header .inner .util li a {
+#gnb li a:hover {
+  color: #ff4081;
+}
+
+/* 제목 스타일 */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #333;
+}
+
+/* 입력 창 스타일 */
+.name-input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   display: block;
-  font: 12px/1 "arial";
-  color: #999;
-  padding: 0px 10px;
+  margin: 0 auto;
 }
 
-header .inner h1 {
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-  padding-left: 30px;
-}
-
-header .inner #gnb {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-
-header .inner #gnb li {
-  float: left;
-}
-
-header .inner #gnb li a {
+.todo-input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   display: block;
-  font: bold 15px/1 "arial";
-  color: #555;
-  padding: 20px 40px;
-  transition: all 0.5s;
+  margin: 0 auto;
 }
-header .inner #gnb li a:hover {
-  background: #555;
-  color: #fff;
+
+/* 방명록 항목 컨테이너 스타일 */
+.todos-container {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+/* 방명록 항목 스타일 */
+.todo-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+  background-color: #f1f1f1;
+}
+
+.delete-btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #d73764;
 }
