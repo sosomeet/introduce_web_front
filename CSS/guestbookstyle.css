@@ -92,6 +92,16 @@ h1 {
   margin: 0 auto;
 }
 
+#add_guestbook {
+  width: calc(20% - 40px);
+  height: 5vh;
+  margin: 10px auto;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  position: relative;
+}
+
 /* 방명록 항목 컨테이너 스타일 */
 .todos-container {
   border-top: 1px solid #ddd;

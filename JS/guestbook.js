@@ -63,13 +63,11 @@ const nameInput = document.querySelector('.name-input');
 // todo-input input 태그 가져오기
 const todoInput = document.querySelector('.todo-input');
 
+const add_guestbook_btn = document.querySelector("#add_guestbook")
+
 // 키가 눌렸을 때
-todoInput.addEventListener('keypress', function (event) {
-    // 그 키가 엔터면
-    if (event.key == 'Enter') {
-        // addTodo 호출
-        addTodo();
-    }
+add_guestbook_btn.addEventListener('click', function (event) {
+    addTodo();
 });
 
 // todo 추가
