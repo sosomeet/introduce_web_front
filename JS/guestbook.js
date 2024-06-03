@@ -53,6 +53,9 @@ function renderTodos(todos) {
     });
 }
 
+
+// todo-input input 태그 가져오기
+const nameInput = document.querySelector('.name-input');
 // todo-input input 태그 가져오기
 const todoInput = document.querySelector('.todo-input');
 
@@ -68,12 +71,17 @@ todoInput.addEventListener('keypress', function (event) {
 // todo 추가
 function addTodo() {
     // trim() : 입력값에서 좌우 공백 제거
+    const name = todoInput.value.trim();
+
+    // trim() : 입력값에서 좌우 공백 제거
     const title = todoInput.value.trim();
 
     // 입력 형식
     let todoData = {
         id: 0,
-        item: title
+        name: name,
+        item: title,
+        time: 0
     };
 
     // 만약 입력이 없다면 return

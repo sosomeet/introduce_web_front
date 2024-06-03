@@ -1,9 +1,8 @@
 @charset "utf-8";
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -13,79 +12,43 @@ ol {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
 }
 
 header {
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-}
-
-header .inner {
-  width: 1180px;
-  height: 120px;
-  margin: 0px auto;
-  position: relative;
-}
-
-header .inner h1 {
-  position: absolute;
-  left: 0px;
-  bottom: 15px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
 header .inner h1 a {
-  font: bold 24px/1 "arial";
-  color: #444;
-}
-
-header .inner .util {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
-
-header .inner .util li {
-  float: left;
-}
-
-header .inner .util li a {
-  display: block;
-  font: 12px/1 "arial";
-  color: #999;
-  padding: 0px 10px;
-}
-
-header .inner #gnb {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-
-header .inner #gnb li {
-  float: left;
-}
-
-header .inner #gnb li a {
-  display: block;
-  font: bold 15px/1 "arial";
-  color: #555;
-  padding: 20px 40px;
-  transition: all 0.5s;
-}
-
-header .inner #gnb li a:hover {
-  background: #555;
-  color: #fff;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
 }
 
 figure {
-  width: 100%;
-  height: calc(100vh - 120px);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.nav_1 {
   background-image: url("../IMG/title_image\ \(1\).png");
-  opacity: 0.95;
-  position: relative;
-  overflow: hidden;
-  padding-top: 180px;
 }
 
 .nav_2 {
@@ -105,294 +68,218 @@ figure {
 }
 
 figure .inner {
-  width: 1180px;
-  margin: 0px auto;
-  position: relative;
-}
-
-figure .inner h1 {
-  font: normal 100px/1 "arial";
-  color: #000;
-  background-color: #fff;
-  filter: brightness(1);
-  margin-bottom: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding: 5px;
+  width: 100%;
+  padding: 0 20px;
 }
 
-.nav_1 .inner h1 {
-  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.8);
-}
-
-.nav_1 .inner p {
-  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.9);
-}
-
-.nav_2 .inner h1 {
-  box-shadow: 10px 10px 30px rgba(154, 205, 50, 0.8);
-}
-
-.nav_2 .inner p {
-  box-shadow: 10px 10px 10px rgba(154, 205, 50, 0.9);
-}
-
-.nav_3 .inner h1 {
-  box-shadow: 10px 10px 10px rgba(232, 131, 255, 0.8),
-    10px 10px 30px rgba(93, 89, 255, 0.8);
-}
-
-.nav_3 .inner p {
-  box-shadow: 10px 10px 10px rgba(232, 131, 255, 0.8),
-    10px 10px 30px rgba(93, 89, 255, 0.8);
-}
-
-.nav_4 .inner h1 {
-  box-shadow: 10px 10px 30px rgba(197, 27, 212, 0.8);
-}
-
-.nav_4 .inner p {
-  box-shadow: 10px 10px 10px rgba(197, 27, 212, 0.8);
-}
-
-.nav_5 .inner h1 {
-  box-shadow: 10px 10px 30px rgba(107, 34, 48, 0.9);
-}
-
-.nav_5 .inner p {
-  box-shadow: 10px 10px 30px rgba(107, 34, 48, 0.9);
-}
-
-figure .inner .퐁 {
-  font: bold 100px/1 "arial";
-  color: royalblue;
-  display: inline;
-}
-
-figure .inner .당 {
-  font: bold 100px/1 "arial";
-  color: yellowgreen;
-  display: inline;
-}
-
-figure .inner .SingNest {
-  font: bold 100px/1 "arial";
-  background: linear-gradient(to right, #e88dff, #5d59ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline;
-}
-
-figure .inner .poporang {
-  font: bold 100px/1 "arial";
-  color: rgb(197, 27, 212);
-  display: inline;
-}
-
-figure .inner .kwtycoon {
-  font: bold 100px/1 "arial";
-  color: rgb(107, 34, 48);
-  display: inline;
+figure .inner h1 div {
+  text-shadow: -3px 0 #333, 0 3px #333, 3px 0 #333, 0 -3px #333;
 }
 
 figure .inner p {
-  font: 16px/1.4 "arial";
-  color: #000;
-  background-color: #fff;
-  filter: brightness(1);
-  margin-bottom: 60px;
+  text-shadow: -2px 0 #333, 0 2px #333, 2px 0 #333, 0 -2px #333;
 }
 
-figure .inner a {
-  display: block;
-  width: 300px;
-  height: 30px;
-  border: 1px solid #bbb;
-  font: bold 11px/30px "arial";
-  color: #fff;
+figure h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
   text-align: center;
-  letter-spacing: 1px;
-  transition: all 0.5s;
-  text-shadow: 0px 0px 3px #000;
 }
 
-figure .inner a:hover {
-  background: #fff;
-  color: #555;
-  text-shadow: 0px 0px 0px #000;
+figure p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+figure .btn {
+  text-align: left;
+  display: inline-block;
+  margin: 30px;
+}
+
+#gnb {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#gnb li {
+  margin-left: 30px;
+}
+
+#gnb a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#gnb a:hover {
+  color: #ccc;
+}
+
+.util {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+.util li {
+  margin-left: 10px;
+}
+
+.util a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.util a:hover {
+  color: #ccc;
 }
 
 section {
-  width: 100%;
-  padding: 200px 0px;
+  padding: 80px 0;
 }
 
-section .inner {
-  width: 1180px;
-  margin: 0px auto;
-}
-
-section .inner h1 {
-  font: bold 24px/1 "arial";
-  color: #555;
+section h1 {
+  font-size: 36px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  color: #20b2aa;
 }
 
-section .inner .wrap {
-  width: 100%;
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 40px;
+  padding: 0 20px;
 }
 
-section .inner .wrap::after {
-  content: "";
-  display: block;
-  clear: both;
+article {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-section .inner .wrap article {
-  width: 350px;
-  margin-right: 20px;
+article:hover {
+  transform: translateY(-5px);
 }
 
-section .inner .wrap article:last-child {
-  margin-right: 0px;
-}
-
-section .inner .wrap article h2 {
-  margin-bottom: 10px;
-  font: bold 32px/1 "arial";
-  color: #000;
-}
-
-section .inner .wrap article p {
-  font: normal 16px/1 "arial";
-  color: #777;
-  margin-top: 10px;
-  line-height: 20px;
-}
-section .inner .wrap article {
-  width: 100%;
+.pic,
+.vertical {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px;
   margin-bottom: 20px;
-  overflow: hidden;
-  margin: 40px;
 }
 
-section .inner .wrap #video_article {
-  margin: 0 auto;
+.vertical {
+  height: 400px;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #20b2aa;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#video_article {
+  grid-column: 1 / -1;
   text-align: center;
 }
 
-section .inner .wrap article .pic {
-  float: left;
-  width: 400px;
+#video_article video {
+  max-width: 100%;
   height: auto;
-  margin-right: 20px;
-}
-
-#pongdang section .inner .wrap article .pic {
-  float: left;
-  width: 400px;
-  height: auto;
-  margin-right: 20px;
-}
-
-#pongdang section .inner .wrap #video_article video {
-  width: 100%;
-}
-
-#pongdang section .inner .wrap article .vertical {
-  margin: 0px 50px;
-  margin-right: 70px;
-  width: 300px;
-}
-
-#poporang section .inner .wrap article .vertical {
-  margin: 0px 50px;
-  margin-right: 120px;
-  width: 250px;
-}
-
-#kwtycoon section .inner .wrap article .vertical {
-  margin: 0px 50px;
-  margin-right: 120px;
-  width: 250px;
-}
-
-#kwtycoon section .inner .wrap #video_article video {
-  width: 100%;
-}
-
-section .inner .wrap article .text {
-  overflow: hidden;
-}
-
-section .inner .wrap article h2,
-section .inner .wrap article p {
-  margin: 0 0 10px 0;
-}
-
-section .inner .wrap article img {
-  width: 100%;
-  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-  width: 100%;
-  padding: 30px 0px;
-  background: #333;
-  border-top: 1px solid #888;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
 }
 
-footer .inner {
-  width: 1180px;
-  margin: 0px auto;
+footer .upper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-right: 30px;
 }
 
-footer .inner .upper {
-  width: 100%;
-  border-bottom: 1px solid #555;
-  padding-bottom: 20px;
+footer .upper h1 {
+  font-size: 24px;
+  margin: 0;
+  padding-left: 30px;
 }
 
-footer .inner .upper::after {
-  content: "";
-  display: block;
-  clear: both;
+footer .upper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-footer .inner .upper h1 {
-  float: left;
-  font: bold 24px/1 "arial";
-  color: #999;
-}
-
-footer .inner .upper ul {
-  float: right;
-}
-
-footer .inner .upper ul li {
-  float: left;
+footer .upper li {
   margin-left: 20px;
 }
 
-footer .inner .upper ul li a {
-  font: bold 14px/1 "arial";
-  color: #888;
+footer .upper a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-footer .inner .lower {
-  width: 100%;
-  padding-top: 20px;
+footer .upper a:hover {
+  color: #ccc;
 }
 
-footer .inner .lower address {
-  width: 100%;
-  font: 12px/1 "arial";
-  color: #888;
-  margin-bottom: 20px;
+footer .lower {
+  font-size: 14px;
+  text-align: center;
 }
 
-footer .inner .lower p {
-  width: 100%;
-  font: 12px/1 "arial";
-  color: #888;
+footer address {
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #20b2aa;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #48d1cc;
 }
