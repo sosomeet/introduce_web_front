@@ -102,7 +102,7 @@ function addTodo() {
             getTodos();
         })
         .catch(error => {
-            console.error('Error adding todo: ', error);
+            console.error('Error adding todo: ', todoData);
         });
 }
 
