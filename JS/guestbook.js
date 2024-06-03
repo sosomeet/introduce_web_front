@@ -30,16 +30,19 @@ function renderTodos(todos) {
         // div 생성 부분
         const nameDiv = document.createElement('div')
         const todoDiv = document.createElement('div')
+        const timeDiv = document.createElement('div')
         // 생성된 div에 todo-item class 지정
         nameDiv.classList.add('name-item');
         todoDiv.classList.add('todo-item');
+        timeDiv.classList.add('time-item');
         // 생성된 div의 할 일을 item으로 초기화
         nameDiv.textContent = todo.name;
         todoDiv.textContent = todo.item;
+        timeDiv.textContent = todo.time;
         // todosContainer에 자식으로 추가
         todosContainer.appendChild(nameDiv);
         todosContainer.appendChild(todoDiv);
-
+        todosContainer.appendChild(timeDiv);
 
         // 삭제 버튼 생성 및 이벤트 처리
         const deleteBtn = document.createElement('button');
