@@ -102,6 +102,10 @@ h1 {
   position: relative;
 }
 
+#add_guestbook:hover {
+  animation: jelly 0.5s;
+}
+
 /* 방명록 항목 컨테이너 스타일 */
 .todos-container {
   border-top: 1px solid #ddd;
@@ -141,5 +145,20 @@ h1 {
 }
 
 .delete-btn:hover {
+  animation: jelly 0.5s;
   background-color: #d73764;
+}
+
+@keyframes jelly {
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
