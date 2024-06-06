@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .inner h1 {
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+header .inner h1 a {
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+figure {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+figure .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+figure .inner h1 {
+  text-shadow: -3px 0 #333, 0 3px #333, 3px 0 #333, 0 -3px #333;
+}
+
+figure .inner p {
+  text-shadow: -2px 0 #333, 0 2px #333, 2px 0 #333, 0 -2px #333;
+}
+
+figure h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+figure p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+figure .btn {
+  text-align: left;
+  display: inline-block;
+  margin: 30px;
+}
+
+#gnb {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#gnb li {
+  margin-left: 30px;
+}
+
+#gnb a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#gnb a:hover {
+  color: #ccc;
+}
+
+.util {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+.util li {
+  margin-left: 10px;
+}
+
+.util a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.util a:hover {
+  color: #ccc;
+}
+
+main {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0px auto 160px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: calc(
+    80vh - 160px
+  ); /* Adjust height to make room for header and footer */
+  overflow: visible;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+
+  height: 80%;
+  padding: 0px auto;
+}
+
+.swiper-slide h2 {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.swiper-slide p:last-child {
+  margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007bff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer .upper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-right: 30px;
+}
+
+footer .upper h1 {
+  font-size: 24px;
+  margin: 0;
+  padding-left: 30px;
+}
+
+footer .upper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer .upper li {
+  margin-left: 20px;
+}
+
+footer .upper a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .upper a:hover {
+  color: #ccc;
+}
+
+footer .lower {
+  font-size: 14px;
+  text-align: center;
+}
+
+footer address {
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 30px;
+}
