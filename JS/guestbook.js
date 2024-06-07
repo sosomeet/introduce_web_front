@@ -1,4 +1,4 @@
-const host = "http://18.205.219.133:8083"
+const host = "http://18.205.219.133:8085"
 const todosContainer = document.querySelector('.todos-container')
 
 // 처음 접속할 때 getTodos 메소드를 실행
